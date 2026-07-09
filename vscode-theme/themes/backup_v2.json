@@ -1,0 +1,151 @@
+{
+	"name": "My Custom Dark",
+	"type": "dark",
+
+	"colors": {
+		"editor.background": "#1E2026",
+		"editor.foreground": "#E0E0D8",
+		"editorCursor.foreground": "#FFD966",
+
+		"editor.selectionBackground": "#3A3F46",
+		"editor.inactiveSelectionBackground": "#3A3F46",
+		"editor.selectionHighlightBackground": "#3A3F46",
+		"editor.lineHighlightBackground": "#282A2E",
+
+		"editorLineNumber.foreground": "#3B3E45",
+		"editorLineNumber.activeForeground": "#C5C6BD",
+
+		"editorIndentGuide.background": "#3B3E45",
+		"editorIndentGuide.activeBackground": "#5C6168",
+
+		"sideBar.background": "#1E2026",
+		"sideBar.foreground": "#E0E0D8",
+		"sideBar.selectionBackground": "#3A3F46",
+		"sideBarSectionHeader.background": "#282A2E",
+		"sideBarSectionHeader.foreground": "#C5C6BD",
+
+		"activityBar.background": "#1E2026",
+		"activityBar.foreground": "#C5C6BD",
+		"activityBar.inactiveForeground": "#7C7B6A",
+
+		"statusBar.background": "#282A2E",
+		"statusBar.foreground": "#E0E0D8",
+		"statusBar.noFolderBackground": "#282A2E",
+		"statusBar.debuggingBackground": "#5C6168",
+
+		"tab.activeBackground": "#1E2026",
+		"tab.inactiveBackground": "#16171B",
+		"tab.activeForeground": "#E0E0D8",
+		"tab.inactiveForeground": "#7C7B6A",
+		"tab.border": "#3B3E45",
+
+		"gitDecoration.modifiedResourceForeground": "#F0C674",
+		"gitDecoration.untrackedResourceForeground": "#B5E2A1",
+		"gitDecoration.deletedResourceForeground": "#F07178",
+
+		"editorError.foreground": "#F07178",
+		"editorWarning.foreground": "#FFD966",
+		"editorInfo.foreground": "#6CA0DC",
+		"editorHint.foreground": "#8AB6C1"
+	},
+	
+	"tokenColors": [
+		{
+			"name": "Comments",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"foreground": "#7C7B6A",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Keywords",
+			"scope": [
+				"keyword",
+				"storage.type",
+				"storage.modifier",
+				"keyword.operator"
+			],
+			"settings": {
+				"foreground": "#F28F6A"
+			}
+		},
+		{
+			"name": "Types (builtin + custom)",
+			"scope": [
+				"entity.name.type",
+				"support.type",
+				"support.type.builtin",
+				"entity.name.struct",
+				"entity.name.interface",
+				"entity.name.class",
+				"storage.type"
+			],
+			"settings": {
+				"foreground": "#FFD966"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"meta.function-call"
+			],
+			"settings": {
+				"foreground": "#7AC7F2"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": [
+				"variable",
+				"variable.other",
+				"identifier",
+				"parameter",
+				"property"
+			],
+			"settings": {
+				"foreground": "#E0E0D8"
+			}
+		},
+		{
+			"name": "Constants and Numbers",
+			"scope": [
+				"constant",
+				"constant.numeric",
+				"constant.language"
+			],
+			"settings": {
+				"foreground": "#FFA066"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": [
+				"string",
+				"punctuation.definition.string"
+			],
+			"settings": {
+				"foreground": "#B5E2A1"
+			}
+		},
+		{
+			"name": "Punctuation, separators",
+			"scope": [
+				"punctuation",
+				"punctuation.definition.block",
+				"punctuation.definition.parameters",
+				"punctuation.separator",
+				"meta.brace",
+				"meta.delimiter"
+			],
+			"settings": {
+				"foreground": "#E0E0D8"
+			}
+		}
+	]
+}

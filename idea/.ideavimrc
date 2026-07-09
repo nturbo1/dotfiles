@@ -1,0 +1,5 @@
+inoremap <A-;> <Esc>
+nnoremap ; :w<CR>
+nnoremap <S-j> <C-f>
+nnoremap <S-k> <C-b>
+set clipboard+=unnamedplus

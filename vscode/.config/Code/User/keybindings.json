@@ -1,0 +1,49 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+;",
+        "command": "extension.vim_escape",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "shift+a",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    }
+]

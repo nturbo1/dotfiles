@@ -1,0 +1,16 @@
+{
+    "editor.tabSize": 4,
+    "editor.bracketPairColorization.enabled": false,
+    
+    "workbench.colorTheme": "My Custom Theme",
+
+    // Vim settings
+    "vim.leader": " ",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        }
+    ]
+}
