@@ -1,15 +1,17 @@
 local NIGHT_MODE = "Night"
 local DAY_MODE = "Day"
-local theme_mode = NIGHT_MODE
+local theme_mode = DAY_MODE
 
 local palette = {
     bg0 = "#000000",
-    bg1 = "#171717",
-    bg2 = "#1e1e1e",
-    bg3 = "#292929",
+    bg1 = "#0F0F0F",
+    bg2 = "#171717",
+    bg3 = "#1e1e1e",
+    bg4 = "#292929",
 
     fg0 = "#ecece6",
     fg1 = "#D8D8CC",
+    fg2 = "#C6C6B3",
 
     blue = "#51adbf",
     blue1 = "#388999",
@@ -33,8 +35,8 @@ local palette = {
 local FLOAT_WINDOW_BG_COLOR; if theme_mode == DAY_MODE then FLOAT_WINDOW_BG_COLOR = palette.bg1 else FLOAT_WINDOW_BG_COLOR = palette.bg0 end 
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = FLOAT_WINDOW_BG_COLOR, fg = "NONE" });
 
-local TEXT_COLOR                    = palette.fg1
-local BACKGROUND_COLOR; if theme_mode == DAY_MODE then BACKGROUND_COLOR = palette.bg0 else BACKGROUND_COLOR = palette.bg1 end
+local TEXT_COLOR                    = palette.fg2
+local BACKGROUND_COLOR; if theme_mode == DAY_MODE then BACKGROUND_COLOR = palette.bg1 else BACKGROUND_COLOR = palette.bg2 end
 local KEYWORD_COLOR                 = palette.red
 local TYPE_COLOR                    = palette.blue
 local BUILTIN_TYPE_COLOR            = palette.red
