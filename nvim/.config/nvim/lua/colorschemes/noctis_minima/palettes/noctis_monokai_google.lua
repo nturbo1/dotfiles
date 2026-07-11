@@ -32,7 +32,7 @@ local palette = {
     violet2 = "#772EFF",
 }
 
-local FLOAT_WINDOW_BG_COLOR; if theme_mode == DAY_MODE then FLOAT_WINDOW_BG_COLOR = palette.bg1 else FLOAT_WINDOW_BG_COLOR = palette.bg0 end 
+local FLOAT_WINDOW_BG_COLOR; if theme_mode == DAY_MODE then FLOAT_WINDOW_BG_COLOR = palette.bg0 else FLOAT_WINDOW_BG_COLOR = palette.bg1 end 
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = FLOAT_WINDOW_BG_COLOR, fg = "NONE" });
 
 local TEXT_COLOR                    = palette.fg2
