@@ -17,7 +17,7 @@ return function(hl, c)
 
     -- Functions
     hl("@function.c",               { link = "Function" })
-    hl("@function.call.c",          { link = "Text" })
+    hl("@function.call.c",          { link = "FunctionCall" })
     hl("@function.method.call.c",   { link = "Text" })
 
     -- Structures, properties, etc.

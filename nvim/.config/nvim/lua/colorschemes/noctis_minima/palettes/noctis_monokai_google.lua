@@ -1,6 +1,6 @@
 local NIGHT_MODE = "Night"
 local DAY_MODE = "Day"
-local theme_mode = DAY_MODE
+local theme_mode = NIGHT_MODE
 
 local palette = {
     bg0 = "#000000",
@@ -35,25 +35,26 @@ local palette = {
 local FLOAT_WINDOW_BG_COLOR; if theme_mode == DAY_MODE then FLOAT_WINDOW_BG_COLOR = palette.bg0 else FLOAT_WINDOW_BG_COLOR = palette.bg1 end 
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = FLOAT_WINDOW_BG_COLOR, fg = "NONE" });
 
-local TEXT_COLOR                    = palette.fg2
-local BACKGROUND_COLOR; if theme_mode == DAY_MODE then BACKGROUND_COLOR = palette.bg1 else BACKGROUND_COLOR = palette.bg2 end
+local TEXT_COLOR; if theme_mode == DAY_MODE then TEXT_COLOR = palette.fg2 else TEXT_COLOR = palette.fg1 end
+local BACKGROUND_COLOR; if theme_mode == DAY_MODE then BACKGROUND_COLOR = palette.bg1 else BACKGROUND_COLOR = palette.bg3 end
 local KEYWORD_COLOR                 = palette.red
 local TYPE_COLOR                    = palette.blue
 local BUILTIN_TYPE_COLOR            = palette.red
 local FUNCTION_NAME_COLOR           = TEXT_COLOR
+local FUNCTION_CALL_COLOR           = TEXT_COLOR
 local CLASS_CONSTRUCTOR_NAME_COLOR  = FUNCTION_NAME_COLOR
 local CLASS_PROPERTY_COLOR          = TEXT_COLOR
 local PROJECT_EXPLORER_WINDOW_BG    = palette.bg
 
 local COMMENT_COLOR             = palette.gray
-local STRING_COLOR              = palette.green1
-local CONSTANT_COLOR            = TEXT_COLOR
+local STRING_COLOR              = palette.yellow
+local CONSTANT_COLOR            = palette.violet
 local BUILTIN_CONSTANT_COLOR    = KEYWORD_COLOR
 local NUMBER_COLOR              = palette.violet
 local BOOLEAN_COLOR             = KEYWORD_COLOR
 
 local IMPORT_COLOR  = KEYWORD_COLOR
-local MACRO_COLOR   = KEYWORD_COLOR
+local MACRO_COLOR   = palette.green
 
 local OPERATOR_COLOR    = TEXT_COLOR
 local PUNCTUATION_COLOR = TEXT_COLOR
@@ -76,6 +77,7 @@ return function()
         operator            = OPERATOR_COLOR,
         comment             = COMMENT_COLOR,
         function_           = FUNCTION_NAME_COLOR,
+        function_call       = FUNCTION_CALL_COLOR,
         class_constructor   = CLASS_CONSTRUCTOR_NAME_COLOR,
         class_property      = CLASS_PROPERTY_COLOR,
         variable            = TEXT_COLOR,
