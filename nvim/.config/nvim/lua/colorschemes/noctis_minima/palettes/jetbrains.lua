@@ -59,11 +59,12 @@ local CLASS_PROPERTY_COLOR          = jetbrains_palette.purple_dark
 local BACKGROUND_COLOR              = jetbrains_palette.background
 local PROJECT_EXPLORER_WINDOW_BG    = jetbrains_palette.background_alt
 
-local COMMENT_COLOR  = jetbrains_palette.gray_60
+local COMMENT_COLOR  = jetbrains_palette.gray_50
 local STRING_COLOR   = jetbrains_palette.green
 local CONSTANT_COLOR = jetbrains_palette.pink
 local BUILTIN_CONSTANT_COLOR = KEYWORD_COLOR
 local NUMBER_COLOR   = jetbrains_palette.cyan
+local BOOLEAN_COLOR             = KEYWORD_COLOR
 
 local IMPORT_COLOR  = jetbrains_palette.orange
 local MACRO_COLOR   = jetbrains_palette.yellow
@@ -85,6 +86,7 @@ return function()
         builtin_type        = BUILTIN_TYPE_COLOR,
         string              = STRING_COLOR,
         number              = NUMBER_COLOR,
+        boolean             = BOOLEAN_COLOR,
         operator            = TEXT_COLOR,
         comment             = COMMENT_COLOR,
         function_           = FUNCTION_NAME_COLOR,
