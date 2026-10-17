@@ -26,6 +26,7 @@ return function(hl, c)
     -- ==================================== C++ =========================================
     -- Type
     hl("@type.builtin.cpp",             { fg = c.builtin_type })
+    hl("@module.cpp",                   { fg = c.keyword })
 
     -- Keyword
     hl("@keyword.import.cpp",             { fg = c.macro })
